@@ -28,9 +28,13 @@ location of metadata and other json data files.
 [CLUSTER]
 
 HOST=dwhcluster.c8ua9azfmct2.us-west-2.redshift.amazonaws.com
+
 DB_NAME=dwh
+
 DB_USER=dwhuser
+
 DB_PASSWORD=xxxxx
+
 DB_PORT=5439
 
 [IAM_ROLE]
@@ -63,7 +67,6 @@ SONG_DATA='s3://udacity-dend/song_data'
 
 Install the above libraries using **pip install** if these don't exist already in your system.
 
-### ER Diagram
-Please take a look at the sparkifydb_erd.png which is geneated using
-sqlalchemy and sqlalchemy_schemadisplay packages
+### Sample data from songplays
+
 
