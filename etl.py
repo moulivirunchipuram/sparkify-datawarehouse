@@ -13,6 +13,10 @@ def load_staging_tables(cur, conn):
 # Extract data from staging tables and insert into Fact and Dimension Tables        
         
 def insert_tables(cur, conn):
+    """Loop through insert_table_queries list
+       Extract appropriate data from staging and insert them
+       in to the tables
+    """
     for query in insert_table_queries:
         cur.execute(query)
         conn.commit()
