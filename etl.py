@@ -26,11 +26,16 @@ def insert_tables(cur, conn):
 def main():
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
-
+    """Use the properties loaded in the above config object
+       to connect to access the cluster and connect to the database 
+    """
     conn = psycopg2.connect("host={} dbname={} user={} password={} port={}".format(*config['CLUSTER'].values()))
     cur = conn.cursor()
     
-    # read data from bucket and copy to staging tables
+    """The following function call reads data
+       from the speicified source bucket and 
+       copies them into the staging tables
+    """
     
     load_staging_tables(cur, conn)
     
