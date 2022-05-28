@@ -26,6 +26,7 @@ This file contains the essential configuration properties like cluster endpoint,
 location of metadata and other json data files.
 
 [CLUSTER]
+
 HOST=dwhcluster.c8ua9azfmct2.us-west-2.redshift.amazonaws.com
 DB_NAME=dwh
 DB_USER=dwhuser
@@ -33,11 +34,15 @@ DB_PASSWORD=xxxxx
 DB_PORT=5439
 
 [IAM_ROLE]
+
 ARN=arn:aws:iam::264028458522:role/dwhRole
 
 [S3]
+
 LOG_DATA='s3://udacity-dend/log_data'
+
 LOG_JSONPATH='s3://udacity-dend/log_json_path.json'
+
 SONG_DATA='s3://udacity-dend/song_data'
 
 ### Fact Table
