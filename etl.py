@@ -5,6 +5,10 @@ from sql_queries import copy_table_queries, insert_table_queries
 # Copy data from bucket into the staging tables viz., staging_events and staging_songs
 
 def load_staging_tables(cur, conn):
+    """Loop through copy_table_queries list
+       and copy data from the specified bucket
+       in to the staging tables
+    """
     for query in copy_table_queries:
         cur.execute(query)
         conn.commit()
