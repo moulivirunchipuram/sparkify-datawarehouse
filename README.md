@@ -68,5 +68,11 @@ SONG_DATA='s3://udacity-dend/song_data'
 Install the above libraries using **pip install** if these don't exist already in your system.
 
 ### Sample data from songplays
+select * from songplays where level = 'free' limit 5 ;
+
+[321-1653764281808.csv](https://github.com/moulivirunchipuram/sparkify-datawarehouse/files/8791679/321-1653764281808.csv)
+![Songplays-result](https://user-images.githubusercontent.com/17463601/170839443-ea98e5ba-0d3e-4f0b-935a-8f7d458d17b3.PNG)
+
+
 
 
