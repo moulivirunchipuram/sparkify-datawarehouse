@@ -67,6 +67,11 @@ SONG_DATA='s3://udacity-dend/song_data'
 
 Install the above libraries using **pip install** if these don't exist already in your system.
 
+## How to run the application
+
+1. Run "python create_tables.py"
+2. Run "python etl.py"
+
 ### Sample data from songplays
 select * from songplays where level = 'free' limit 5 ;
 
