@@ -2,7 +2,7 @@ import configparser
 import psycopg2
 from sql_queries import create_table_queries, drop_table_queries
 
-
+# drop tables
 def drop_tables(cur, conn):
     """drop all the tables to enable repeated testing of the application
        loops through then drop_table_queries list specified in sql_queries.py
@@ -22,9 +22,11 @@ def create_tables(cur, conn):
 
 # This is the driver code.  
 
-
 def main():
-    # Read configuration details from dwh.cfg file
+    """Create ConfigParser object and read all the necessary
+       properties/attributes to access the endpoint and connect to
+       the database
+    """
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
     """Use the properties loaded in the above config object
